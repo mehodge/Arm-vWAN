@@ -24,7 +24,12 @@
             "value": "linux"
         },
         "nvaPwd": {
-            "value": "weHU3878!!??" // TODO: Fill in parameter value
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/bad8333d-60e3-47ec-884d-20456f2df201/resourceGroups/KeyVaults-RG/providers/Microsoft.KeyVault/vaults/LocalAdminUsers"
+                },
+                "secretName": "LocalAdmin"
+            }
         },
         "presharedKey": {
             "value": "" // TODO: Fill in parameter value
