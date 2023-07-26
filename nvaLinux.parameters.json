@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmPwd" : {
+                "reference": {
+                    "keyVault": {
+                        "id": "/subscriptions/bad8333d-60e3-47ec-884d-20456f2df201/resourceGroups/KeyVaults-RG/providers/Microsoft.KeyVault/vaults/LocalAdminUsers"
+                    },
+                    "secretName": "LocalAdmin"
+            },
+        }
+    }
+}
