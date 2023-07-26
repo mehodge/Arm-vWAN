@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "wanName": {
+            "value": "ne-vWAN"
+        },
+        "hubName": {
+            "value": "ne-vWan-Hub"
+        },
+        "hubPrefix": {
+            "value": "192.168.11.0/24"
+        },
+        "hubLocation": {
+            "value": "northeurope"
+        },
+        "siteName": {
+            "value": "ne-branchVpn"
+        },
+        "siteAsn": {
+            "value": 65101
+        },
+        "nvaType": {
+            "value": "linux"
+        },
+        "nvaPwd": {
+            "value": "weHU3878!!??" // TODO: Fill in parameter value
+        },
+        "presharedKey": {
+            "value": "" // TODO: Fill in parameter value
+        },
+        "branchVnetPrefix": {
+            "value": "192.168.100.0/24"
+        },
+        "branchSubnetPrefix": {
+            "value": "192.168.100.0/26"
+        }
+    }
+}
