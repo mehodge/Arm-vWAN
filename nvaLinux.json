@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vnetName": {
-            "defaultValue": "myVnet",
+            "defaultValue": "NVA-VNET",
             "type": "string"
         },
         "vnetPrefix": {
@@ -11,7 +11,7 @@
             "type": "string"
         },
         "subnetName": {
-            "defaultValue": "subnet1",
+            "defaultValue": "NvaSubnet",
             "type": "string"
         },
         "subnetPrefix": {
@@ -24,7 +24,7 @@
             "allowedValues": ["ubuntu"]
         },
         "vmName": {
-            "defaultValue": "myNva",
+            "defaultValue": "Nva",
             "type": "string"
         },
         "vmUsr": {
@@ -32,7 +32,7 @@
             "type": "string"
         },
         "vmPwd": {
-            "defaultValue": "weHU3878!!??",
+            "defaultValue": "",
             "type": "securestring"
         },
         "vmSize": {
