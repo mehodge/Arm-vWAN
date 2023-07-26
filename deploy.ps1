@@ -3,8 +3,8 @@ $SubID = 'bad8333d-60e3-47ec-884d-20456f2df201'
 $RG = 'NE-vWAN-RG'
 $Location = 'North Europe'
 $Name = 'vWAN-LAB'
-$TemplateFile = "C:\Users\michael.neal\OneDrive - Mehodge\Git\Arm-vWAN\azuredeploy.json"
-$TemplateParameterFile = "C:\Users\michael.neal\OneDrive - Mehodge\Git\Arm-vWAN\azuredeploy.parameters.json"
+$TemplateUri = 'https://raw.githubusercontent.com/mehodge/Arm-vWAN/main/azureDeploy.json'
+$TemplateParameterUri = 'https://raw.githubusercontent.com/mehodge/Arm-vWAN/main/azureDeploy.parameters.json'
 $Tags = @{
     "Application" = "vWAN";
     "Data Classication" = "Internal";
@@ -19,5 +19,5 @@ New-AzResourceGroup -Name $RG -Location $Location -Tag $Tags
 New-AzResourceGroupDeployment `
     -Name $Name `
     -ResourceGroupName $RG `
-    -TemplateFile $TemplateFile `
-    -TemplateParameterFile $TemplateParameterFile
+    -TemplateUri $TemplateUri `
+    -TemplateParameterUri $TemplateParameterUri
